@@ -1,0 +1,105 @@
+===================================Database Commands===================================
+1. View all databases
+show dbs
+________________________________________________________________________________________
+2. Create a new or switch databases 
+use dbName
+________________________________________________________________________________________
+3. View current Database
+db
+________________________________________________________________________________________
+4. Delete Database 
+  db.dropDatabase()
+
+===================================Collection Commands===================================
+1. Show Collections
+show collections
+________________________________________________________________________________________
+2. Create a collection named 'comments'
+db.createCollection('anyname')
+________________________________________________________________________________________
+3. Drop a collection named 'comments'
+db.comments.drop()
+
+===================================Row(Document) Commands===================================
+1. Show all Rows in a Collection 
+db.comments.find()
+________________________________________________________________________________________
+2. Show all Rows in a Collection (Prettified)
+db.comments.find().pretty()
+________________________________________________________________________________________
+3. Find the first row matching the object
+db.comments.findOne({name: 'bhavya'})
+________________________________________________________________________________________
+4. Insert One Row
+db.comments.insert
+({
+    'name': 'bhavya',
+    'lang': 'JavaScript',
+    'member_since': 5
+})
+________________________________________________________________________________________
+5. Insert many Rows
+db.comments.insertMany
+([{
+    'name': 'bhavya',
+    'lang': 'JavaScript',
+    'member_since': 5
+    }, 
+    {'name': 'ashish',
+    'lang': 'Python',
+    'member_since': 3
+    },
+    {'name': 'himanshu',
+    'lang': 'React',
+    'member_since': 4
+}])
+________________________________________________________________________________________
+6. Search in a MongoDb Database
+db.comments.find({lang:'Python'})
+________________________________________________________________________________________
+7. Limit the number of rows in output
+db.comments.find().limit(2)
+________________________________________________________________________________________
+8. Count the number of rows in the output
+db.comments.find().count()
+________________________________________________________________________________________
+9. Update a row
+db.comments.updateOne
+({
+     name: 'bhavya'},
+     {$set:
+     {name: 'bhavya',
+     lang: 'mongoDB' 
+}})
+________________________________________________________________________________________
+10. Insert a updated Row which is not present in the Data
+db.comments.updateOne
+({
+     name: 'bhavya22'},
+     {$set:
+     {name: 'bhavya22',
+     lang: 'mongoDB' }},
+     {upsert: true
+})
+________________________________________________________________________________________
+11.  Mongodb Increment Operator
+db.comments.update({name: 'bhavya'},
+{$inc:{
+    member_since: 2
+}})
+________________________________________________________________________________________
+12. Mongodb Rename Operator
+db.comments.update({name: 'bhavya'},
+{$rename:{
+    member_since: 'member'
+}})
+________________________________________________________________________________________
+13. Delete Row 
+db.comments.remove({name: 'Cyber'})
+________________________________________________________________________________________
+14. Less than/Greater than/ Less than or Eq/Greater than or Eq
+db.comments.find({member_since: {$lt: 90}})
+db.comments.find({member_since: {$lte: 90}})
+db.comments.find({member_since: {$gt: 90}})
+db.comments.find({member_since: {$gte: 90}})
