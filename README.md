@@ -47,8 +47,17 @@ ________________________________________________________________________________
 6. You can tap on the Database and Check Collection. ![image](https://user-images.githubusercontent.com/80274814/200132212-888da42d-8e36-4b31-8937-f53163519e7b.png)
 7. Now Everything is set, Start Entering your data in your own database From the PowerShell.
 
+_______________________________________________________________________________________________________________________________________________________________________
 ## All the powershell commands are given in the .txt file
+you can also reffer to this links for understanding the commands
+1. https://www.tutorialspoint.com/mongodb/index.htm
+2. https://www.javatpoint.com/mongodb-tutorial
 
+<br>also remember this things given in the image
+<br>![unknown](https://user-images.githubusercontent.com/80274814/200244677-7a3729dc-e67a-4824-b169-e4b3bb445bec.png)
+<br>![unknown (1)](https://user-images.githubusercontent.com/80274814/200244746-bacb0d3b-630b-4c03-b0cc-e64e5419cd6e.png)
+
+_______________________________________________________________________________________________________________________________________________________________________
 
 
 
