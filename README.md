@@ -33,7 +33,8 @@ ________________________________________________________________________________
    3. This is the MongoDB Shell or you can called it as the Compiler for Mongo. ![image](https://user-images.githubusercontent.com/80274814/200131550-054a319c-aef8-4732-b46c-0e1ca0c7b21e.png)
    4. Extract this Zip and in this zip go and copy this Mongosh.exe. ![image](https://user-images.githubusercontent.com/80274814/200131727-f14ce1e3-fc7a-44eb-bd0f-d7d730052e81.png)
    5. Then go and paste this exe in and MongoDB directory, for mine is this C:\Program Files\MongoDB\Server\6.0\bin (here i have just renamed the Mongosh.exe file into Mongo so it will be easy to type in the Powershell). ![image](https://user-images.githubusercontent.com/80274814/200131826-41fd3691-bd0d-4735-9e49-a809a85f5bb0.png)
-   6. After this you can again go to the Terminal/PowerShell and type Mongo or Mongosh to start the Database.
+   6. Add this path in the C folder where Mongo is installed C:\data\db.
+   7. After this you can again go to the Terminal/PowerShell and type Mongo or Mongosh to start the Database.
 
 _______________________________________________________________________________________________________________________________________________________________________
 ## Creating a Database 
